@@ -1,25 +1,26 @@
+* /* Tar bort standartmåtten */ 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+}/* Grundinställningar för hemsidan */
 html, body {
     height: 100%;
     margin: 0;
-}
+}/* Grundläggande utseende */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #443f3f;
+    /* Hela hemsidan fylls */
     min-height: 100vh;
+    /* flexbox strukturerar innehållet */
     display: flex;
     flex-direction: column;
 }
 
-body.dark-mode {
-    background-color: #121212;
-    color: #ffffff;
-}
+
+
 header {
     background-color: #141413ef;
     color: white;
@@ -29,11 +30,13 @@ header {
 
 
 h1 {
-    font-size: 4em;
+    font-size: 64px;
 }
+/* Navigeringsmenyns utseende*/
 nav a {
     color: white;
     text-decoration: none;
+    /* avstånd mellan länkarna */
     margin: 0 15px;
     font-size: 16px;
 }
@@ -50,7 +53,9 @@ img {
     object-fit: cover;
 }
 main {
+    /* Main tar upp utrymmet mellan header och footer*/
     flex: 1;
+    /* Avstånd mellan innehåll */
     padding: 20px;
     text-align: center;
 }
@@ -79,19 +84,25 @@ footer {
     height: 400px;
     object-fit: cover;
 }
- 
+ /* Utseende och placering för restauranglistan */
+
 .restaurant-list {
     list-style-type: none; 
     padding:0;
+    /* Skapar avstånd ovanför och under listan samt centrerar den */
     margin: 30px auto;
     max-width: 900px;
+       /*placerar alternativen i ett rutnät*/
     display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        /* Anpassar antalet kolumner efter skärmens bredd */
+     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 15px;
 }
 .restaurant-list li {
     background-color: #ffffff;
     padding: 15px;
+        /* skuggans riktning, genomskinlighet, suddighet*/
+
     box-shadow: 0 2px 6px rgb(0, 0, 0, 0.08);
 }
     
