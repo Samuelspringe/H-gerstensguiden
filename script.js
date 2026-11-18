@@ -1,8 +1,4 @@
-const quizData = [
-    {
-        question: "Vilken av dessa är en kulturprofiler är uppväxt i Hägersten?",       
-
-        answers: ["Carola", "Zara Larsson", "Avicii"],
-        correct: 1
-    },      
-
+function myFunction() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+}
